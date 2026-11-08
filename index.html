@@ -1,21 +1,36 @@
-<header>
-    <h2>Mi Portafolio</h2>
-    <button id="themeToggle">Modo Claro ☀️</button>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<main>
-    <section class="hero-card">
-        <h1>¡Hola! Bienvenido a mi web</h1>
-        <p>Proyecto creado con HTML semántico, CSS moderno y JavaScript.</p>
-        
-        <div class="counter-box">
-            <p>Contador de clics interactivo:</p>
-            <h2 id="counterValue">0</h2>
-            <button id="countBtn">¡Haz clic aquí!</button>
+    <header>
+        <h1>Mi Primera Página Web</h1>
+        <button id="themeToggle">Cambiar Tema</button>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Bienvenido</h2>
+            <p>Esta es mi primera práctica usando HTML, CSS y JavaScript.</p>
+            
+            <div class="counter-section">
+                <p>Contador de clics:</p>
+                <span id="counterValue">0</span>
+                <br>
+                <button id="countBtn">Sumar 1</button>
+            </div>
         </div>
-    </section>
-</main>
+    </main>
 
-<footer>
-    <p>© 2026 - Mi Primera Web</p>
-</footer>
+    <footer>
+        <p>Año 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
