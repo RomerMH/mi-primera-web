@@ -1,18 +1,20 @@
 const countBtn = document.getElementById('countBtn');
 const counterValue = document.getElementById('counterValue');
-let count = 0;
+let contador = 0;
 
-countBtn.addEventListener('click', () => {
-    count++;
-    counterValue.textContent = count;
+countBtn.addEventListener('click', function() {
+    contador++;
+    counterValue.textContent = contador;
 });
 
 const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    if (document.body.classList.contains('light-mode')) {
-        themeToggle.textContent = 'Modo Oscuro 🌙';
+
+themeToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    
+    if (document.body.classList.contains('dark-mode')) {
+        themeToggle.textContent = 'Modo Normal';
     } else {
-        themeToggle.textContent = 'Modo Claro ☀️';
+        themeToggle.textContent = 'Cambiar Tema';
     }
 });
